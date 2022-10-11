@@ -1,0 +1,38 @@
+#include
+#include
+class complex
+{
+private:
+float real,imag;
+public:
+complex(){}
+complex(float x, float y)
+{
+real=x;
+imag=y;
+}
+void display(void)
+{
+cout<<"\n"< }
+complex operator +(complex m)
+{
+class complex temp;
+temp.real=real+m.real;
+temp.imag=imag+m.imag;
+return(temp);
+}
+};
+void main(void)
+{
+class complex t1(3.3,4.4);
+class complex t2(5.2,2.3);
+class complex t3;
+cout<<"\nFirst complex number is ";
+t1.display();
+cout<<"\nSecond complex number is ";
+t2.display();
+t3=t1+t2;
+cout<<"\naddition of above two comples numbers is ";
+t3.display();
+getch();
+}
